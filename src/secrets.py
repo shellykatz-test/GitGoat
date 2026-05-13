@@ -23,3 +23,4 @@ class Secrets:
         for _ in range(3):
             file_content = base64.b64decode(file_content)
         return file_content.decode('utf-8')
+
