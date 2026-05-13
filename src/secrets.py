@@ -24,3 +24,4 @@ class Secrets:
             file_content = base64.b64decode(file_content)
         return file_content.decode('utf-8')
 
+#trigger sync?
