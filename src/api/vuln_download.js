@@ -13,4 +13,9 @@ app.get("/download2", (req, res) => {
   res.send(fs.readFileSync(filePath));
 });
 
+app.get("/download3", (req, res) => {
+  const filePath = path.join("./public", req.query.filename);
+  res.send(fs.readFileSync(filePath));
+});
+
 module.exports = app;  
